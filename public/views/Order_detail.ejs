@@ -47,6 +47,7 @@
                             <th>Status</th>
                             <th>Cake Name</th>
                             <th>Quantity</th>
+                            <th>Price</th>
                             <th>Total Price</th>
                             <th>Add a bill</th>
                             <th>Delete</th>
@@ -63,6 +64,7 @@
                               <td><%= order[i].Cake.cake_status %></td>
                               <td><%= order[i].Cake.cake_name %></td>
                               <td><%= order[i].Quantity %></td>
+                              <td><%= order[i].Cake.cake_price %></td>
                               <td><%= order[i].total_price %></td>
                               <td><a href="/add_bill/<%= order[i].order_detail_id %>" class="aa">Add a bill</a></td>
                               <td><a href="/delete_bill/<%= order[i].order_detail_id %>" class="aa">Delete</a></td>
@@ -98,7 +100,7 @@
                         <thead class="table-dark">
                         <tr>
                             <th>order ID</th>
-                            <th>Customer ID</th>
+                            <th>Customer Name</th>
                             <th>Address</th>
                             <th>Status</th>
                             <th>Cake Name</th>
@@ -111,7 +113,7 @@
                         <% for (let i = 0; i < report.length; i++) { %>
                             <tr>
                             <td><%= report[i].order_detail_id %></td>
-                            <td><%= report[i].customer_id %></td>
+                            <td><%= report[i].Customer.customer_username %></td>
                             <td><%= report[i].Customer.Address %></td>
                             <td><%= report[i].Cake.cake_status %></td>
                             <td><%= report[i].Cake.cake_name %></td>

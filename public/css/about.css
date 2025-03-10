@@ -64,3 +64,14 @@ nav ul li a {
     cursor: pointer;
 }
 
+footer {
+  background-color: #fed330;
+  color: black;
+  padding: 20px;
+  text-align: center;
+  height: 100px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}

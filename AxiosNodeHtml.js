@@ -188,7 +188,8 @@ app.get("/about", async (req, res) => {
   try {
     if (req.cookies.userSession != null) {
       const response = await axios.get(base_url + "/Employee/");
-      res.render("about", { Employee: response.data });
+      const response2 = await axios.get(base_url + "/Store");
+      res.render("about", { Employee: response.data , Store: response2.data});
     } else {
       return res.redirect("/");
     }

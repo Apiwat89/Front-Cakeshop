@@ -183,7 +183,7 @@ app.get("/logout",  async (req, res) => {
 
 //------------------------------------------------------------------------------------------
 
-// about
+// aboutt
 app.get("/about", async (req, res) => {
   try {
     if (req.cookies.userSession != null) {
